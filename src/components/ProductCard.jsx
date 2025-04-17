@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Heart } from "lucide-react";
-import AuthModal from "./Authmodal";
+import AuthModal from "./AuthModal";
 
 const ProductCard = ({ product }) => {
   const [isLiked, setIsLiked] = useState(false);
