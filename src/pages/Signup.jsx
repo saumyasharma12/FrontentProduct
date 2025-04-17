@@ -11,7 +11,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault()
     try {
-      await axios.post('https://vercel-backend-psi-lilac.vercel.app/', { name, email, password })
+      await axios.post(`https://vercel-backend-psi-lilac.vercel.app/`, { name, email, password })
       alert('Signup successful! Please login.')
       navigate('/login')
     } catch (err) {

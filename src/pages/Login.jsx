@@ -10,7 +10,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault()
     try {
-      const res = await axios.post('https://vercel-backend-psi-lilac.vercel.app/', { email, password })
+      const res = await axios.post(`https://vercel-backend-psi-lilac.vercel.app/`, { email, password })
       localStorage.setItem('token', res.data.token)
       alert('Login successful!')
       navigate('/')
